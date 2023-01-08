@@ -6,7 +6,6 @@ const state = reactive({
 const res = await fetch("http://localhost:3000/api/gallery");
 
 res.json().then((images) => {
-  console.log(images);
   state.images = images;
 });
 </script>
